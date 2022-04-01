@@ -21,23 +21,22 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
-    "chromatic": "npx chromatic --project-token=4ca5b1460489"
+    "chromatic2": "npx chromatic --project-token=4ca5b1460489",
+    "chromatic": "chromatic --project-token=4ca5b1460489"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
     ],
-    "overrides": [
-      {
-        "files": [
-          "**/*.stories.*"
-        ],
-        "rules": {
-          "import/no-anonymous-default-export": "off"
-        }
+    "overrides": [{
+      "files": [
+        "**/*.stories.*"
+      ],
+      "rules": {
+        "import/no-anonymous-default-export": "off"
       }
-    ]
+    }]
   },
   "browserslist": {
     "production": [
